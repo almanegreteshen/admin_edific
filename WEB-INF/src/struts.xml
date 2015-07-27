@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+    <package name="default" extends="struts-default">
+    
+       	<action name="Login" class="buildings.action.LoginAction">
+           	<result name="input">/index.jsp</result>
+           	<result name="retorna">/index.jsp</result>
+           	<result name="success">/WEB-INF/jsp/success.jsp</result>
+           	<result name="admin">/WEB-INF/jsp/admin.jsp</result>
+           	<result name="error">/WEB-INF/jsp/error.jsp</result>
+       	</action>
+       	
+        <action name="EditarCliente" class="buildings.action.ClienteAction">  
+            <result name="input">/WEB-INF/jsp/admin.jsp</result>
+            <result name="success">/WEB-INF/jsp/editarcliente.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
+        
+        <action name="ListarEdificios" class="buildings.action.EdificioAction" method="listarEdificios">
+            <result name="input">/WEB-INF/jsp/admin.jsp</result>
+            <result name="success">/WEB-INF/jsp/admin.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
+        
+        <action name="NuevoEdificio" class="buildings.action.EdificioAction" method="nuevoEdificio">
+            <result name="input">/WEB-INF/jsp/admin.jsp</result>
+            <result name="success">/WEB-INF/jsp/nuevoedificio.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
+        
+        <action name="AceptaNuevoEdificio" class="buildings.action.EdificioAction" method="aceptaNuevoEdificio" >
+            <result name="success">/WEB-INF/jsp/nuevoedificio.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
+        
+		<action name="EditarEdificio" class="buildings.action.EdificioAction">
+            <result name="input">/WEB-INF/jsp/admin.jsp</result>
+            <result name="success">/WEB-INF/jsp/editaredificio.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
+        
+		<action name="EliminarEdificio" class="buildings.action.EdificioAction" method="eliminarEdificio" >
+            <result name="success">/WEB-INF/jsp/admin.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>        
+        
+		<action name="AceptaEditarEdificio" class="buildings.action.EdificioAction" method="aceptaEditarEdificio" >
+            <result name="input">/WEB-INF/jsp/admin.jsp</result>
+            <result name="success">/WEB-INF/jsp/editaredificio.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>        
+       	
+        <action name="solicitud" class="buildings.action.SolicitudAction">
+        	<result name="input">/WEB-INF/jsp/success.jsp</result>
+            <result name="success">/WEB-INF/jsp/solicitudes.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
+        
+        <action name="ListarSolicitudesNo" class="buildings.action.SolicitudAction" method="adminSolicitudesNo" >
+            <result name="success">/WEB-INF/jsp/adminsolicitudesno.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
+        
+        <action name="ListarSolicitudesOk" class="buildings.action.SolicitudAction" method="adminSolicitudesOk" >
+            <result name="success">/WEB-INF/jsp/adminsolicitudesok.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>                
+        
+        <action name="nuevasolicitud" class="buildings.action.SolicitudAction" method="agregarsolicitud">
+        	<result name="input">/WEB-INF/jsp/solicitudes.jsp</result>
+            <result name="success">/WEB-INF/jsp/nuevasolicitud.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
+        
+        <action name="aceptanuevasolicitud" class="buildings.action.SolicitudAction" method="aceptanuevasolicitud">
+        	<result name="input">/WEB-INF/jsp/nuevasolicitud.jsp</result>
+            <result name="success">/WEB-INF/jsp/nuevasolicitud.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>  
+         
+    </package>     
+</struts>

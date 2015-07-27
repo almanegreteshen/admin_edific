@@ -1,0 +1,102 @@
+@CHARSET "ISO-8859-1";
+
+.divsolider{
+	text-align: center;
+	width: 40%;
+	float:left;
+}
+
+.divsoliizq{
+	text-align: center;
+}
+
+.footer{
+	margin-top: 4%;
+	position: relative; 
+	height: 50px;
+	clear: both; 
+	background: #286af0; 
+	text-align: center; 
+}
+
+p{
+	margin-top: 10px;
+	margin-bottom: auto;
+}
+
+h3{
+	margin-bottom: auto;
+}
+
+.divtablasolicitudes {
+  border: 2px solid #27303f;
+  width: 80%;
+  background-color:#f5faff;
+  position:relative;
+  margin : 0px auto 10px auto;
+}
+
+.grandparent {
+  border-radius: 25px;
+  border: 2px solid #27303f;
+  width: 80%;
+  height:120px;
+  background-color:#f5faff;
+  position:relative;
+  margin : 0px auto 10px auto;
+}
+ 
+.parent {
+  text-align: center;
+  width: 40%;
+  height: 90%;
+}
+.child {
+  width: 60%;
+  height: 90%;
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+
+#headeruser{
+	display: block;
+	margin : 0px auto 10px auto;
+	background-color : #dce5f4;
+	border-radius: 25px;
+    border: 2px solid #27303f;
+    padding: 20px; 
+    width: 80%;
+    height: 90px;     
+}
+
+body{
+	background: url('../images/sky.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;	
+}
+
+.top_left
+{
+	border-radius: 25px;
+    float:left;
+    width:15%;
+    height:100vh;
+    background: #caddc5;
+}
+
+#cssmenu {
+  margin: 0px auto 4% auto;
+  width: 80%;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background: #39b1cc;
+  background: -moz-linear-gradient(top, #51bbd2 0%, #2d97af 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #51bbd2), color-stop(100%, #2d97af));
+  background: -webkit-linear-gradient(top, #51bbd2 0%, #2d97af 100%);
+  background: -o-linear-gradient(top, #51bbd2 0%, #2d97af 100%);
+  background: -ms-linear-gradient(top, #51bbd2 0%, #2d97af 100%);
+  background: linear-gradient(to bottom, #51bbd2 0%, #2d97af 100%);
+}
+
